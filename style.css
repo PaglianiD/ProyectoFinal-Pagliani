@@ -4,10 +4,12 @@
 }
 
 .row{
-    height: 35px;
+    height: 40px;
+    display: flex;
+    
 }
 .col{
-    background-color: orange;
+    background-color:  rgba(10, 77, 201, 0.87);
     text-decoration: none;
 }
 .col a{
@@ -18,11 +20,205 @@
 .w-100{
     margin: auto;
     margin-top: 10px;
-    width: 75%!important;
+    width: 70%!important;
 
 }
 
-.w-100 h2{
+.w-100 h3{
     text-decoration: underline;
 }
 
+
+#Novedades{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    
+    
+}
+
+#Novedades button{
+    padding: 5px; 
+    display: flex;
+    align-items: center;   
+}
+
+#Novedades img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+#Novedades div{
+    border-radius: 8px;
+    background-color: rgba(243, 235, 235, 0.61);
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    box-shadow: 0 3px 6px 1px rgb(0 0 0 / 20%);
+    
+}
+
+#Novedades button{
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: rgb(240, 233, 233);
+
+}
+
+#todoCelulares{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+#todoCelulares div{
+    border-radius: 8px;
+    background-color: rgba(243, 235, 235, 0.61);
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    box-shadow: 0 3px 6px 1px rgb(0 0 0 / 20%);
+}
+
+#todoCelulares img{
+    width: 200px;
+}
+
+#todoCelulares button{
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: rgb(240, 233, 233);
+
+}
+
+#categoria{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 55px;
+    padding-right: 90px;
+}
+
+.w-100 h2{
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+.filtro{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+    
+
+.filtro li{
+    list-style: none;
+    border-radius: 8px;
+    background-color: rgba(10, 77, 201, 0.87);
+    padding: 10px 60px 10px 60px;
+    margin: 5px;
+    box-shadow: 0 3px 6px 1px rgb(0 0 0 / 20%);
+    color: aliceblue;
+    
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(10, 77, 201, 0.87); 
+}
+
+.redes li{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.redes a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.carrito-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.modal-container{
+    width: 70%;
+    margin: 0 15%;
+    max-height: 88vh;
+    color: #fff;
+    background-color:#0a2c8b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 10vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+
+.modal-container .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container div img{
+    height: 120px;
+    width: 120px;
+}
+.modal-container p{
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.delete-product{
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .filtro{
+        display: block;
+    }
+    
+} 
